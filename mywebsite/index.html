@@ -21,6 +21,8 @@
     />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
   </head>
 
   <body>
@@ -50,10 +52,10 @@
             </h5>
 
             <div class="theme-options-wrapper">
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="green-mode" class="theme-dot"></div>
-              <div id="purple-mode" class="theme-dot"></div>
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
 
             <p id="settings-note">
@@ -132,9 +134,9 @@
             <img id="git-img" src="./Images/gitHubEB.png">
             <h3>Find me on linkedIn</h3>
 
-            <a target="_blank" href="#">Linked In</a>
+            <a target="_blank" href="https://www.linkedin.com/in/ewa-bittner/">Linked In</a>
             <br>
-            <a target="_blank" href="#">Git Hub</a>
+            <a target="_blank" href="https://github.com/EwaBittner">Git Hub</a>
           </div>
 
         </div>
@@ -153,6 +155,7 @@
               <div class="post-preview">
                 <h6 class="post-title">Post title</h6>
                 <p class="post-intro">This is a sentence. Some more text</p>
+                <a href="post.html">Read more</a>
               </div>
             </div>
           </div>
@@ -163,6 +166,7 @@
               <div class="post-preview">
                 <h6 class="post-title">Post title</h6>
                 <p class="post-intro">This is a sentence. Some more text</p>
+                <a href="post.html">Read more</a>
               </div>
             </div>
           </div>
@@ -173,6 +177,7 @@
               <div class="post-preview">
                 <h6 class="post-title">Post title</h6>
                 <p class="post-intro">This is a sentence. Some more text</p>
+                <a href="post.html">Read more</a>
               </div>
             </div>
           </div>
@@ -188,13 +193,13 @@
 
         <form id="contact-form">
           <label>Name</label>
-          <input class="input-field" type="text" value="name">
+          <input class="input-field" type="text" name="name">
 
           <label>Subject</label>
-          <input class="input-field" type="text" value="subject">
+          <input class="input-field" type="text" name="subject">
 
           <label>Email</label>
-          <input class="input-field" type="text" value="email">
+          <input class="input-field" type="text" name="email">
 
           <label>Message</label>
           <textarea class="input-field" name="message"></textarea>
@@ -205,5 +210,6 @@
       </div>
     </section>
     
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
